@@ -60,6 +60,20 @@ body{
     background-position: center;
     
 }
+/* sponser related styles */
+.sponser-container{
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.sponser-companies{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+gap: 60px;
+}
 
 /* responsive for mobile devices */
 @media screen  and (max-width: 576px) {
@@ -71,5 +85,8 @@ body{
     }
     .banner-img{
         width: 100%;
+    }
+    .sponser-companies{
+        grid-template-columns: repeat(2,1fr);
     }
 }
