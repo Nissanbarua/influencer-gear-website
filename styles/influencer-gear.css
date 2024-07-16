@@ -14,6 +14,9 @@ body {
   padding: 10px 24px;
   border: none;
 }
+button i{
+    margin-left: 5px;
+}
 /* header related styles */
 .nav-title {
   font-weight: bold;
@@ -118,7 +121,69 @@ body {
     max-width: 196px;
     margin-top: 27px;
 }
+/* feature relataed styles */
+.feature-container{
+    max-width: 1047px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+    
+}
+.collection-container a{
+    color: #e02c6d;
+    font-weight: 700;
+    font-size: 1rem;
+    
 
+}
+.secondary-btn{
+    margin-top: 50px;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    /* Optional: Remove default outline */
+    outline: none;
+    float: right;
+    
+
+}
+.feature-content{
+    margin-left: 96px;
+    padding-top: 20px;
+}
+/* footer related styles */
+.footer-container{
+    background-color: rgba(10, 8, 38, 1);
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.footer-container h4{
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.footer-container p{
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgba(217, 219, 225, 1);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.social-icons{
+    color: rgba(255, 255, 255, 1);
+}
+.social-icons i{
+    margin-right: 20px;
+}
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -139,6 +204,15 @@ body {
   }
   .collection-content {
     grid-template-columns: repeat(1,1fr);
+  }
+  .feature-container{
+    flex-direction: column;
+  }
+  .feature-container img{
+    margin-left: 20px;
+  }
+  .footer-container{
+    margin-left: 20px;
   }
 }
 
